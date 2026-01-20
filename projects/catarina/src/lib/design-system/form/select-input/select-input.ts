@@ -1,7 +1,7 @@
 import { NgFor, NgClass } from '@angular/common';
 import { Component, ElementRef, EventEmitter, forwardRef, HostListener, Input, Output, ViewChild } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { CatInput } from "catarina";
+import { CatInput } from "../cat-input/cat-input";
 
 @Component({
   selector: 'cat-select-input',
