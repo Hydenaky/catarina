@@ -1,6 +1,6 @@
 {
   "name": "safirial-icons",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "SVG icon asset package for Angular applications, especifically designed for catarina (https://jpcn-portfolio.vercel.app/catarina-preview). This package uses free svg online resources from heroicons(https://heroicons.com/outline) and svg repo(https://www.svgrepo.com/).",
   "keywords": ["angular", "icons", "svg", "assets", "ui", "design-system", "safirial"],
   "author": "Juan Pablo Cañon N. (Hydenaky)",
