@@ -17,12 +17,12 @@ export * from './lib/design-system/form/color-input/color-input';
 export * from './lib/design-system/form/select-input/select-input';
 
 //Pending https://tecsify.com/blog/input-en-html/
-export * from './lib/design-system/form/date-input/date-input';
+/*export * from './lib/design-system/form/date-input/date-input';
 export * from './lib/design-system/form/file-input/file-input';
 export * from './lib/design-system/form/password-input/password-input';
 export * from './lib/design-system/form/range-input/range-input';
 export * from './lib/design-system/form/text-area-input/text-area-input';
-export * from './lib/design-system/form/time-input/time-input';
+export * from './lib/design-system/form/time-input/time-input';*/
 /*
 image, search, telefono, reset, radio button, checkbox, button, email
 */
@@ -31,7 +31,7 @@ image, search, telefono, reset, radio button, checkbox, button, email
 //Pending
 export * from './lib/design-system/overlays/dialog/dialog';
 export * from './lib/design-system/overlays/drawer/drawer';
-export * from './lib/design-system/overlays/menu/menu';
+export * from './lib/design-system/panels/menu/menu';
 
 
 /*Services and Directives */

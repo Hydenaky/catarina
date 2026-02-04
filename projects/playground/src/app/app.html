@@ -1,12 +1,12 @@
-<cat-menu style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1;">
-    <cat-button variant="secondary" iconLeft="home">Home</cat-button>
+<cat-menu style="position: fixed; top: 0; left: 0; z-index: 1;">
+    <cat-button variant="secondary">Home</cat-button>
     <cat-button variant="secondary">Catarina</cat-button>
-    <cat-button variant="secondary">Safirial</cat-button>
+    <cat-button variant="secondary">Safirial Icons</cat-button>
     <cat-button variant="secondary">Icons</cat-button>
     <div class="theme-buttons">
         <cat-color-input [icon]="true"></cat-color-input>
         <cat-select-input [(ngModel)]="value" (ngModelChange)="onValue($event)" [options]="options"
-            placeholder="Select Input" transform="translateY(0%) translateX(-5%)"></cat-select-input>
+            placeholder="Select Input" transform="translateY(0) translateX(0)"></cat-select-input>
         <cat-button style="margin-left: auto;" variant="contrast" (clicked)="handleTheme()"
             [iconCenter]="isDark ? 'sun' : 'moon'"></cat-button>
     </div>
@@ -114,6 +114,9 @@
                 <input catInput placeholder="Number Input" type="number">
             </div>
             <div class="input-inside-card">
+                <input catInput placeholder="Email Input" type="email">
+            </div>
+            <div class="input-inside-card">
                 <cat-select-input [(ngModel)]="value" (ngModelChange)="onValue($event)" [options]="options"
                     placeholder="Select Input" transform="translateY(0%) translateX(0%)"></cat-select-input>
             </div>
@@ -152,8 +155,7 @@
     <div class="item-8">
         <p>Panels</p>
         <cat-card width="100%">
-            <cat-accordion label="Scrolleable" buttonVariant="primary" width="12em" [scrolleable]="true"
-                [status]="accordionStatus">
+            <cat-accordion label="Scrolleable" buttonVariant="primary" [scrolleable]="true" [status]="accordionStatus">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -238,5 +240,5 @@
 <!-- https://gridforge-builder.netlify.app/es -->
 
 @for (icon of iconList; track $index) {
-    <cat-icon [name]="icon" size="3em"></cat-icon>
+<cat-icon [name]="icon" size="3em"></cat-icon>
 }

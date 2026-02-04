@@ -41,6 +41,8 @@ export class CatInput implements OnInit {
         border-radius: 18px;
         outline: none;
         transition: all 0.2s;
+        max-width: 100%;
+        box-sizing: border-box;
       }
 
       .cat-input:disabled {
@@ -59,6 +61,8 @@ export class CatInput implements OnInit {
 
       .cat-input:focus {
         border: 1px solid var(--neutral-color-9);
+        color: var(--neutral-color-9);
+        -webkit-text-fill-color: var(--neutral-color-9);
       }
 
       .cat-input.invalid,
@@ -69,6 +73,16 @@ export class CatInput implements OnInit {
       .cat-input.ng-valid.ng-touched {
         border: 1px solid green;
       }
+
+      .cat-input:-webkit-autofill,
+      .cat-input:-webkit-autofill:hover,
+      .cat-input:-webkit-autofill:focus,
+      .cat-input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 1000px var(--neutral-color-1) inset;
+        box-shadow: 0 0 0 1000px var(--neutral-color-1) inset;
+        -webkit-text-fill-color: var(--neutral-color-9);
+      }
+
 
       .cat-input.md {
         padding: 0.5rem 1rem;

@@ -167,8 +167,24 @@ cat-card {
 .input-inside-card {
     display: flex;
     gap: 1em;
+    max-width: 100%;
 
     & cat-color-input {
         margin: 16px;
     }
 }
+
+.theme-buttons {
+    display: flex;
+    gap: 1em;
+    margin-left: auto;
+}
+
+@media screen and (orientation: portrait) and (max-width: 600px) {
+  .theme-buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1024px) {}

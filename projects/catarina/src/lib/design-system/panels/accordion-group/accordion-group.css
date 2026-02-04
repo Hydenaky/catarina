@@ -1,0 +1,9 @@
+:host {
+    min-width: 3em;
+    width: 8em;
+}
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

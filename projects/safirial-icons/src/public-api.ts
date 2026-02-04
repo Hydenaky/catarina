@@ -321,7 +321,6 @@ export const iconList = [
   'wrench-screwdriver',
   'x-circle',
   'x-mark',
-  'placeholder'
 ] as const;
 
 export type IconName = typeof iconList[number];

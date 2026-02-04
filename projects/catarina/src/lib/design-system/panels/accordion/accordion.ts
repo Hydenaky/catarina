@@ -15,7 +15,6 @@ export class Accordion {
 
   @Input() disabled = false;
   @Input() customClass = '';
-  @Input() width: string = 'auto';
 
   //Button Properties
   @Input() buttonVariant: 'primary' | 'secondary' | 'contrast' | 'outline' | 'ghost' = 'secondary';

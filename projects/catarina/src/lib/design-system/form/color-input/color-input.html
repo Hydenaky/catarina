@@ -21,9 +21,9 @@
     }
 </style>
 <!-- input-color.html -->
-<div [style]="`width: ${size};`">
+<div [style.height]="size">
     <input type="color" [style]="icon ? 'opacity: 0;' : 'opacity: 100%;'" [value]="value" (input)="onInput($event)" (blur)="onTouched()">
     @if (icon) {
-        <cat-icon [style]="`height: ${size};`" size="100%" name="palette"></cat-icon>    
+        <cat-icon [style.height]="size" size="100%" name="palette"></cat-icon>    
     }
 </div>

@@ -1,10 +1,13 @@
-<div>
-    <input catInput #input [value]="value" [type]="type" readonly id="select" (mousedown)="toggleActive()" [placeholder]="placeholder">
-    <section #optionsContainer role="listbox" [class]="selectInputClass" class="options" [ngClass]="active ? 'options-active' : 'options.unactive'" [style.transform]="transform">
-        @if (active) {
-            <div role="option"*ngFor="let option of options" (mousedown)="choseValue(option)">
-                {{ option }}
-            </div>
+<input catInput #input [value]="value" [type]="type" readonly id="select" (mousedown)="toggleActive()"
+    [placeholder]="placeholder" class="select-input">
+<section #optionsContainer role="listbox" [class]="selectInputClass" class="options"
+    [ngClass]="active ? 'options-active' : 'options.unactive'" [style.transform]="transform">
+    @if (active) {
+        @for (option of options; track $index) {
+            <cat-button customClass="select-input-option" (clicked)="choseValue(option)" variant="ghost">{{ option }}</cat-button>
         }
-    </section>
-</div>
+<!--     <div role="option" *ngFor="let option of options" (mousedown)="choseValue(option)">
+        {{ option }}
+    </div> -->
+    }
+</section>
